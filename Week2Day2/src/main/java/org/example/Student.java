@@ -14,10 +14,6 @@ public class Student implements People
 
 
         System.out.println("Name is " + name);
-
-        System.out.println("Address" );
-
-        System.out.println(this.ph);
     }
     public int getId() {
         return id;
