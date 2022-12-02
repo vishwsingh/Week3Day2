@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:util="http://www.w3.org/2001/XMLSchema"
+       xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
@@ -18,5 +19,28 @@
 
         <property name="name" value="name1"> </property>
     </bean>
-    
+
+
+        <bean id="stu1" class="org.example.Address">
+        <property name="city" value="Atlanta">
+        </property>
+
+        <property name="state" value="GA">
+        </property>
+            <property name="country" value="USA"> </property>
+
+        <property name="zipcode" value="22222">
+        </property>
+
+        </bean>
+
+    <bean name="stu2" class="org.example.Phone">
+          <property name="ph">
+              <list>
+                  <value>2222222</value>
+                  <value>5555555</value>
+              </list>
+          </property>
+    </bean>
+
 </beans>
